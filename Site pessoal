@@ -1,0 +1,142 @@
+index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lana's Paradise</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="light-theme">
+    <h1>Lana's Paradise</h1>
+    <p id="msg">Alguns de seus álbuns: </p>
+
+       <table> 
+        <tr>
+            <th>Nome do álbum</th>
+            <th>Música mais famosa</th>
+            <th>Data de lançamento></th>
+            </tr>
+            <tr>
+                <td>Born to Die / The Paradise Edition</td>
+                <td>Summertime Sadness</td>
+                <td>27/01/2012</td>
+            </tr>
+            <tr>
+                <td>Ultraviolence</td>
+                <td>West Coast </td>
+                <td>14/04/2014</td>
+            </tr>
+            <tr>
+                  <td>Honeymoon</td>
+                <td>High by the Beach </td>
+                <td>10/08/2015</td>
+            </tr>
+            </table>
+            
+            <br />
+    <img 
+    src="c:\Users\Senai\Downloads\n.png"
+    alt="Álbuns- Lana Del Rey"
+    widht="100"
+    id="albuns-img"
+    style="display: block; margin: 0 auto;"
+    />
+    <br />
+    
+    <a href="https://open.spotify.com/intl-pt/artist/00FQb4jTyendYWaN8pK0wa">
+        Confira as músicas da Lana no Spotify:
+        </a>
+        <script src="app.js"></script>
+    <noscript>You need to enable JavaScript to view the full site.</noscript>
+    
+</body>
+</html>
+
+style.css
+:root {
+    --green: #f0d1a9;
+    --white: #ffffff;
+    --black: #000000;
+
+    --bg: var(--white);
+    --fontColor: var(--black);
+    --btnBg: var(--black);
+    --btnFontColor: var(--white);
+}
+
+body {
+    font-family: monospace;
+    background: var(--bg);
+    color: var(--fontColor);
+    margin: 20px;
+}
+
+ul {
+    font-family: helvetica;
+}
+
+li {
+    list-style: circle;
+}
+
+.list {
+    list-style: square;
+}
+
+.light-theme {
+    --bg: var(--green);
+    --fontColor: var(--black);
+    --btnBg: var(--black);
+    --btnFontColor: var(--white);
+}
+
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 70%;
+    box-shadow: 0 0 10px var(--btnBg);
+}
+
+th,
+td {
+    border: 1px solid var(--btnFontColor);
+    padding: 12px;
+}
+
+th {
+    background-color: var(--btnBg);
+    color: var(--btnFontColor);
+}
+
+td {
+    background-color: var(--bg);
+}
+
+a {
+    display: block;
+    text-align: center;
+    margin: 20px;
+    color: var(--btnBg);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img#makeup-img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+img#makeup-img:hover {
+    transform: scale(1.05);
+}
+
+.btn:focus {
+    outline: none;
+}
