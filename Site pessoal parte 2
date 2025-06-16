@@ -1,0 +1,309 @@
+html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lana's Paradise</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="light-theme">
+    <h1>Lana's Paradise</h1>
+    <p id="msg">Alguns de seus álbuns: </p>
+
+       <table> 
+        <tr>
+            <th>Nome do álbum</th>
+            <th>Música mais famosa</th>
+            <th>Data de lançamento></th>
+            </tr>
+            <tr>
+                <td>Born to Die / The Paradise Edition</td>
+                <td>Summertime Sadness</td>
+                <td>27/01/2012</td>
+            </tr>
+            <tr>
+                <td>Ultraviolence</td>
+                <td>West Coast </td>
+                <td>14/04/2014</td>
+            </tr>
+            <tr>
+                  <td>Honeymoon</td>
+                <td>High by the Beach </td>
+                <td>10/08/2015</td>
+            </tr>
+            </table>
+            
+            <br />
+    <img 
+    src="c:\Users\Senai\Downloads\n.png"
+    alt=""
+    widht="100"
+    id="albuns-img"
+    style="display: block; margin: 0 auto;"
+    />
+    <br />
+    
+    <a href="https://open.spotify.com/intl-pt/artist/00FQb4jTyendYWaN8pK0wa">
+        Confira as músicas da Lana no Spotify:
+        </a>
+        <script src="app.js"></script>
+    <noscript>You need to enable JavaScript to view the full site.</noscript>
+</body>
+</html>
+
+<section class="carousel-container">
+    <div class="carousel">
+      <div class="carousel-item">
+        <img src="https://abertura.art.br/wp-content/uploads/2021/04/0_Brch6az5Jew8OYci.jpg" alt="Image 1">
+      </div>
+      <div class="carousel-item">
+        <img src="https://i0.wp.com/www.conciertosencore.com.mx/wp-content/uploads/2020/06/PORTADAwebLanadelrey.jpg?w=1920&ssl=1" alt="Image 2">
+      </div>
+      <div class="carousel-item">
+        <img src="https://www.rte.ie/images/002032ee-800.jpg" alt="Image 3">
+      </div>
+    </div>
+  
+    <button class="carousel-button prev"></button>
+    <button class="carousel-button next"></button>
+    <div class="carousel-dots"></div>
+  </section>
+  
+  <script src="../3/script.js"></script>
+
+
+style.css
+
+:root {
+    --green: #fac9e1;
+    --white: #ffffff;
+    --black: #000000;
+
+    --bg: var(--white);
+    --fontColor: var(--black);
+    --btnBg: var(--black);
+    --btnFontColor: var(--white);
+}
+
+body {
+    font-family: monospace;
+    background: var(--bg);
+    color: var(--fontColor);
+    margin: 20px;
+}
+
+ul {
+    font-family: helvetica;
+}
+
+li {
+    list-style: circle;
+}
+
+.list {
+    list-style: square;
+}
+
+.light-theme {
+    --bg: var(--green);
+    --fontColor: var(--black);
+    --btnBg: var(--black);
+    --btnFontColor: var(--white);
+}
+
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 70%;
+    box-shadow: 0 0 10px var(--btnBg);
+}
+
+th,
+td {
+    border: 1px solid var(--btnFontColor);
+    padding: 12px;
+}
+
+th {
+    background-color: var(--btnBg);
+    color: var(--btnFontColor);
+}
+
+td {
+    background-color: var(--bg);
+}
+
+a {
+    display: block;
+    text-align: center;
+    margin: 20px;
+    color: var(--btnBg);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img#makeup-img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+img#makeup-img:hover {
+    transform: scale(1.05);
+}
+
+.btn {
+    background-color: var(--btnBg);
+    color: var(--btnFontColor);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--fontColor);
+    color: var(--bg);
+}
+
+.btn:focus {
+    outline: none;
+}
+.carousel-container {
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  .carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-item {
+    min-width: 100%;
+    height: auto;
+  }
+  
+  .carousel-item img {
+    width: 50%;
+    height: auto;
+    object-fit: contain;
+   
+    display: block;         
+    margin: 0 auto;  
+  }
+  
+  .carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
+  
+  .carousel-dots {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+  }
+  
+  .dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+  }
+  
+  .dot.active {
+    background: white;
+  }
+
+
+app.js
+
+document.addEventListener("DOMContentLoaded", () => {
+    const carousel = document.querySelector(".carousel");
+    const items = document.querySelectorAll(".carousel-item");
+    const prevBtn = document.querySelector(".prev");
+    const nextBtn = document.querySelector(".next");
+    const dotsContainer = document.querySelector(".carousel-dots");
+  
+    let currentIndex = 0;
+  
+    items.forEach((_, index) => {
+      const dot = document.createElement("div");
+      dot.classList.add("dot");
+      if (index === 0) dot.classList.add("active");
+      dot.addEventListener("click", () => goToSlide(index));
+      dotsContainer.appendChild(dot);
+    });
+  
+    const dots = document.querySelectorAll(".dot");
+  
+    function updateCarousel() {
+      carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+      dots.forEach((dot, index) => {
+        dot.classList.toggle("active", index === currentIndex);
+      });
+    }
+  
+    function goToSlide(index) {
+      currentIndex = index;
+      updateCarousel();
+    }
+  
+    function nextSlide() {
+      currentIndex = (currentIndex + 1) % items.length;
+      updateCarousel();
+    }
+  
+    function prevSlide() {
+      currentIndex = (currentIndex - 1 + items.length) % items.length;
+      updateCarousel();
+    }
+  
+    nextBtn.addEventListener("click", nextSlide);
+    prevBtn.addEventListener("click", prevSlide);
+  
+    setInterval(nextSlide, 5000);
+  
+    let touchStartX = 0;
+    let touchEndX = 0;
+  
+    carousel.addEventListener("touchstart", (e) => {
+      touchStartX = e.changedTouches[0].screenX;
+    });
+  
+    carousel.addEventListener("touchend", (e) => {
+      touchEndX = e.changedTouches[0].screenX;
+      if (touchStartX - touchEndX > 50) nextSlide();
+      if (touchStartX - touchEndX < -50) prevSlide();
+    });
+  });
