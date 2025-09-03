@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=,, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class = "container">
+            <h1> Meu Portifolio Inicial </h1>
+            <nav>
+                <ul>
+                    <li><a href = "#Sobre">Sobre mim </a></li>
+                    <li><a href = "#Hobbies"> Hobbies </a></li>
+                    <li><a href = "#Habilidades"> Habilidades </a></li>
+                    <li><a href = "#Mídias"> Mídias </a></li>
+                    <li><a href = "#Contatos"> Contatos </a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class = "container">
+        <main>
+            <section id = "sobre" class="secao">
+            <h2> Sobre mim </h2>
+            <p>
+                Olá meu nome é Geovanna Oliveira, sou aluna de tecnologia, 
+                <br> faço <strong> Análise e Desenvolvimento de Sistemas!</strong>
+                <br> Não gosto muito desse curso, 
+                <br> mas sou grata pela oportunidade.
+            <p>
+                Não vou seguir carreira na área de tecnologia 
+                <br> porque eu realmente não gosto,
+                <br> irei seguir na área da ciência.
+            </p>
+        </p>
+            </section>
+            <section id = "Hobbies" class = "secao">
+                <h2> Meus Hobbies </h2>
+                <ul>
+                    <li> Tocar teclado </li>
+                    <li> Desenhar e pintar </li>
+                    <li> Fazer colagem </li>
+                    <li> Ler livros </li>
+                    <li> Assitir filmes e séries </li>
+                    <ul>
+                        <li> Romance </li>
+                        <li> Fantasia </li>
+                        <li> Clássicos </li>
+                        <li> Suspense/ Mistério </li>
+                    </ul>
+                </ul>
+                <h3> Top 3 Músicas Favoritas </h3>
+                <ol>
+                    <li> The Less I Know The Better </li>
+                    <li> Brooklyn Baby </li>
+                    <li> Chamber of Reflection </li>
+                </ol>
+                <h3>Letra das músicas que eu gosto!</h3>
+            <dl>
+                <dt>The Less I Know The Better</dt>
+                <dd><a href="https://www.letras.com/tame-impala/the-less-i-know-the-better/traducao.html" target="_blank">Ver letra</a></dd>
+                <p> 
+                <dt>Brooklyn Baby</dt>
+                <dd><a href="https://www.letras.mus.br/lana-del-rey/brooklyn-baby/" target="_blank">Ver letra</a></dd>
+                </p>
+                <dt>Chamber of Reflection</dt>
+                <dd><a href="https://www.letras.mus.br/mac-demarco/chamber-of-reflection/" target="_blank">Ver letra</a></dd>
+                <p>
+                </p>
+            </dl>
+            <img src="download.jpg" >
+        </section> 
+
+        <section id = "Habilidades" class = "secao">
+            <h2> Tabela de Habilidades </h2>
+            <table>
+                <thead>
+                    <tr>
+                        <tr> Tecnologia </tr>
+                        <tr> Nível de conhecimento </tr>
+                        <tr> Ano de programação </tr>
+                    </tr>
+                </thead>
+                <body>
+                    <td> HTML </td>
+                    <td> Avançado </td>
+                    <td> 2025 </td>
+                </tr>
+                <tr>
+                    <td> JAVA </td>
+                    <td> Intermediário </td>
+                    <td> 2025 </td>
+                </tr>
+                <tr>
+                    <td> CSS </td>
+                    <td> Iniciante </td>
+                    <td> 2025 </td>
+                </tr>
+                </body>
+            </table>
+        </section>
+        <section id = "Mídia" class = "secao">
+            <h2> Mídia </h2>
+            <h3> Meu vídeo vida de programador </h3>
+            <video width = "100%" controls>
+
+            </video>
+        </section>
+        </main>
+    </div >
+</body>
+</html>
