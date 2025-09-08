@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class = "container">
+            <h1> Meu Portifolio Inicial </h1>
+            <nav>
+                <ul>s
+                    <li><a href = "#Sobre">Sobre mim </a></li>
+                    <li><a href = "#Hobbies"> Hobbies </a></li>
+                    <li><a href = "#Habilidades"> Habilidades </a></li>
+                    <li><a href = "#Mídias"> Mídias </a></li>
+                    <li><a href = "#Contatos"> Contatos </a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class = "container">
+        <main>
+            <section id = "sobre" class = "secao">
+            <h2> Sobre mim </h2>
+            <p>
+                Olá meu nome é Geovanna Oliveira, sou aluna de tecnologia, 
+                <br> faço <strong> Análise e Desenvolvimento de Sistemas!</strong>
+                <br> Não gosto muito desse curso, 
+                <br> mas sou grata pela oportunidade.
+            <p>
+                Não vou seguir carreira na área de tecnologia 
+                <br> porque eu realmente não gosto,
+                <br> irei seguir na <em>área da ciência.</em>
+            </p>
+        </p>
+            </section>
+            <section id ="Hobbies" class="secao">
+                <h2> Meus Hobbies </h2>
+                <ul>
+                    <li> Tocar teclado </li>
+                    <li> Desenhar e pintar </li>
+                    <li> Fazer colagem </li>
+                    <li> Assitir filmes e séries </li>
+                    <li> Ler livros </li>
+                    <ul>
+                        <li> Romance </li>
+                        <li> Fantasia </li>
+                        <li> Clássicos </li>
+                        <li> Suspense/ Mistério </li>
+                    </ul>
+                </ul>
+                <h3> Top 3 Músicas Favoritas </h3>
+                <ol>
+                    <li> The Less I Know The Better </li>
+                    <li> Brooklyn Baby </li>
+                    <li> Chamber of Reflection </li>
+                </ol>
+                <h3>Letra das músicas que eu gosto!</h3>
+            <dl>
+                <dt><em>The Less I Know The Better</em></dt>
+                <dd><a href="https://www.letras.com/tame-impala/the-less-i-know-the-better/traducao.html" target="_blank">Ver letra</a></dd>
+                <p> 
+                <dt><em>Brooklyn Baby</em></dt>
+                <dd><a href="https://www.letras.mus.br/lana-del-rey/brooklyn-baby/" target="_blank">Ver letra</a></dd>
+                </p>
+                <dt><em>Chamber of Reflection</em></dt>
+                <dd><a href="https://www.letras.mus.br/mac-demarco/chamber-of-reflection/" target="_blank">Ver letra</a></dd>
+                <p>
+                </p>
+            </dl>
+            <img src="c:\Users\Aluno\Downloads\1c11d1029df44368352f8d49cee3a3c936bb021be056e7ae05b58d664af431fa._SX1080_FMjpg_.jpg" alt="Moranguinho">
+        </section> 
+
+        <section id = "Habilidades" class = "secao">
+            <h2> Tabela de Habilidades </h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th> Tecnologia </th>
+                        <th> Nível de conhecimento </th>
+                        <th> Ano de programação </th>
+                    </tr>
+                </thead>
+                <body>
+                    <td> HTML </td>
+                    <td> Avançado </td>
+                    <td> 2025 </td>
+                </tr>
+                <tr>
+                    <td> JAVA </td>
+                    <td> Intermediário </td>
+                    <td> 2025 </td>
+                </tr>
+                <tr>
+                    <td> CSS </td>
+                    <td> Iniciante </td>
+                    <td> 2025 </td>
+                </tr>
+                </body>
+            </table>
+        </section>
+        <section id = "Mídia" class = "secao">
+            <h2> Mídia </h2>
+            <h3> Meu vídeo vida de programador </h3>
+            <video width = "100%" controls>
+                <source src = "https://www.youtube.com/watch?v=hz--jF2VF8k" type="video/mp4">
+            </video>
+        </section>
+
+        <section id="contato" class="secao">
+            <h2>Contato</h2>
+            <p>Envie-me uma mensagem!</p>
+               <div class="formulario">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" nome="nome_usuario" required>
+            </div>
+               <div class="formulario">
+                <label for="email">Email:</label>
+                <input type="email" id="email" nome="email_usuario" required>
+            </div>
+               <div class="formulario">
+                <label for="mensagem">Mensagem:</label>
+                <textarea type="mensagem" id="mensagem" nome="mensagem_usuario" required></textarea>
+            </div>
+            <button type="submit">Enviar</button>
+        </section>
+
+    </main>
+    </div >
+    <footer>
+        <p>&copy; 2025 - Meu Portifólio. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
+
+CSS
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightpink;
+    margin: 0;
+    padding: 0;
+    color:black (0, 0, 0);
+    line-height: 1.0;
+}
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+}
+header{
+    background-color: darkseagreen;
+    color:white;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom:white 3px solid;
+}
+header h1{
+    text-align: center;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 30px;
+    padding-top: 20px;
+    min-height: 70px;
+}
+nav ul{
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+nav li{
+    display: inline;
+    padding: 0 20px;
+}
+nav a{
+    color:white;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav a:hover{
+    color:darkgreen;
+    text-decoration: underline;
+}
+.secao{
+    padding: 20px;
+    margin-top: 20px;
+    background: linear-gradient(to right, white, rgb(236, 88, 113));
+    border-radius: 30px;
+    box-shadow: 0 2px 5px rgb(238, 110, 131);
+}
+h2{
+    color:black;
+    border-bottom: 2px solid rgb(236, 30, 116);
+    padding-bottom: 10px;
+}
+.imagem-Moranguinho{
+    max-width: 100%;
+    height: 100px;
+    width: 200%;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+table{
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse; 
+}
+th, td{
+    padding: 12px;
+    border: 1px solid black;
+    text-align: center;
+}
+thead{
+    background-color: pink;
+}
+.formulario{
+    margin-bottom: 15px;
+}
+.formulario label{
+    display:block;
+    margin-bottom: 5px;
+}
+.formulario imput, textarea{
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+}
+button:hover{
+    background-color:darkseagreen;
+}
+footer{
+    margin: top 20px;
+    padding: 20px;
+    background-color: darkseagreen;
+    color:rgb(0, 0, 0);
+    text-align: center;
+}
