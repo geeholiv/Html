@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Meu Portifólio Pessoal</title>
+</head>
+<body>
+    <header>
+        <div class = "container">
+            <h1> Meu Portifólio Pessoal </h1>
+            <nav>
+                <ul>
+                    <li><a href = "#Sobre">Sobre mim </a></li>
+                    <li><a href = "#Hobbies"> Hobbies </a></li>
+                    <li><a href = "#Habilidades"> Habilidades </a></li>
+                    <li><a href = "#Contatos"> Contatos </a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class = "container">
+        <main>
+             <section>
+                <div class="perfil">
+                <img src="c:\Users\Aluno\Downloads\temp_image_1B43D99B-3CF2-4FF7-8C67-630A41044A73.jpeg" alt="Foto de perfil" class="foto">
+                <div class="info">
+                <h2>Geovanna Oliveira</h2>
+                <p>16 anos</p>
+               </div>
+        </div>
+            </section>
+            <section id = "Sobre" class = "secao">
+            <h2> Sobre mim </h2>
+            <p>
+                Olá! Meu nome é Geovanna Oliveira da Silva, tenho 16 anos 
+                <br> e atualmente estou cursando <strong> Técnico em Desenvolvimento de Sistemas no SENAI Santa Rosália - Sorocaba.</strong>
+                <br> No curso, aprendo a criar e desenvolver aplicações, desde a parte de programação até o design e a estrutura das páginas. 
+            <p>
+                Trabalho com linguagens como <strong>Java, JavaScript, HTML e CSS,</strong>
+                <br> além de estudar lógica de programação, banco de dados e metodologias de desenvolvimento.
+                <br> Gosto de transformar ideias em soluções digitais, e estou sempre buscando aprender novas tecnologias
+                <br> para melhorar minhas habilidades como <em> futura desenvolvedora. </em>
+            </p>
+        </p>
+            </section>
+            <section id ="Hobbies" class="secao">
+                <h2> Meus Hobbies </h2>
+                <ul>
+                    <li> Tocar teclado </li>
+                    <li> Desenhar e pintar </li>
+                    <li> Fazer colagem </li>
+                    <li> Assitir filmes e séries </li>
+                    <li> Ler livros </li>
+                    <ul>
+                        <li> Romance </li>
+                        <li> Fantasia </li>
+                        <li> Clássicos </li>
+                        <li> Suspense/ Mistério </li>
+                    </ul>
+                </ul>
+        </section> 
+
+        <section id = "Habilidades" class = "secao">
+            <h2> Habilidades </h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th> Tecnologia </th>
+                        <th> Nível de conhecimento </th>
+                        <th> Ano de programação </th>
+                    </tr>
+                </thead>
+                <body>
+                   <td><img src="c:\Users\Aluno\Downloads\download.png"></td>
+                   <td> Iniciante </td>
+                   <td><a href="https://github.com/geeholiv/Html.git" target="_blank">Link HTML</a></td>   
+                </tr>
+                <tr>
+                    <td><img src="c:\Users\Aluno\Downloads\download (1).png"></td>
+                    <td> Intermediário </td>
+                    <td><a href="https://github.com/geeholiv/Javaa.git" target="_blank">Link JAVA</a></td>
+                </tr>
+                <tr>
+                    <td><img src="c:\Users\Aluno\Downloads\download (2).png"></td>
+                    <td> Iniciante </td>
+                    <td><a href="https://github.com/geeholiv/Html.git" target="_blank">Link CSS</a></td>
+                </tr>
+                </body>
+            </table>
+        </section>
+
+        <section id="Contatos" class="secao">
+            <h2>Contato</h2>
+            <p>Envie-me uma mensagem!</p>
+               <div class="formulario">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" nome="nome_usuario" required>
+            </div>
+               <div class="formulario">
+                <label for="email">Email:</label>
+                <input type="email" id="email" nome="email_usuario" required>
+            </div>
+               <div class="formulario">
+                <label for="mensagem">Mensagem:</label>
+                <textarea type="mensagem" id="mensagem" nome="mensagem_usuario" required></textarea>
+            </div>
+            <button type="submit">Enviar</button>
+        </section>
+
+    </main>
+    </div >
+    <footer>
+        <p>&copy; 2025 - Meu Portifólio. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
