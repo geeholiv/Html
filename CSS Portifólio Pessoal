@@ -1,0 +1,130 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightpink;
+    margin: 0;
+    padding: 0;
+    color:black (0, 0, 0);
+    line-height: 1.0;
+}
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+}
+header{
+    background-color: darkseagreen;
+    color:white;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom:white 3px solid;
+}
+.perfil {
+  display: flex;              
+  align-items: center;        
+  gap: 20px;                 
+  margin: 20px 0;
+}
+.foto {
+  width: 150px;               
+  height: 150px;
+  border-radius: 50%;         
+  object-fit: cover;          
+  border: 3px solid #fff;     
+  box-shadow: 0 0 10px rgba(0,0,0,0.2); 
+}
+.info h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #000;
+}
+.info p {
+  margin: 5px 0 0;
+  font-size: 18px;
+  color: #333;
+}
+table img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover; 
+}
+header h1{
+    text-align: center;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 30px;
+    padding-top: 20px;
+    min-height: 70px;
+}
+nav ul{
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+nav li{
+    display: inline;
+    padding: 0 20px;
+}
+nav a{
+    color:white;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav a:hover{
+    color:darkgreen;
+    text-decoration: underline;
+}
+.secao{
+    padding: 20px;
+    margin-top: 20px;
+    background: linear-gradient(to right, white, rgb(236, 88, 113));
+    border-radius: 30px;
+    box-shadow: 0 2px 5px rgb(238, 110, 131);
+}
+h2{
+    color:black;
+    border-bottom: 2px solid rgb(236, 30, 116);
+    padding-bottom: 10px;
+}
+.imagem-Moranguinho{
+    max-width: 100%;
+    height: 100px;
+    width: 200%;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+table{
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse; 
+}
+th, td{
+    padding: 12px;
+    border: 1px solid black;
+    text-align: center;
+}
+thead{
+    background-color: pink;
+}
+.formulario{
+    margin-bottom: 15px;
+}
+.formulario label{
+    display:block;
+    margin-bottom: 5px;
+}
+.formulario imput, textarea{
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+}
+button:hover{
+    background-color:darkseagreen;
+}
+footer{
+    margin: top 20px;
+    padding: 20px;
+    background-color: darkseagreen;
+    color:rgb(0, 0, 0);
+    text-align: center;
+}
