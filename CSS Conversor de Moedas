@@ -1,0 +1,64 @@
+body {
+  font-family: 'arial', cursive, sans-serif;
+  background: linear-gradient(to right, rgb(185, 252, 214), #faf6d1);
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;       
+  height: 100vh;             
+  margin: 0;
+}
+
+    h1 {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color:linear-gradient(to right, rgb(185, 247, 212), #faf6d1);
+    display: center;
+    color: #186e15;
+    margin: 0;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(26, 13, 15, 0.4);
+    z-index: 1000;
+    text-shadow: 1px 1px 2px #153019;
+}
+    
+    form {
+        background-color: #82cc82;
+        padding: 30px;
+        border-radius: 20px;
+        box-shadow: 0 0 15px rgba(255, 192, 203, 0.5);
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        width: 320px;
+        border: 2px solid #7cb471;
+    }
+
+    input, select, button {
+        padding: 12px;
+        font-size: 16px;
+        border: 1px solid #88c482;
+        border-radius: 10px;
+        box-sizing: border-box;
+        background-color: #fff;
+        color: #1a361c;
+    }
+
+    select {
+        background-color: #fafdfa;
+    }
+
+    button {
+        background-color: #599e62;
+        color: white;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        font-weight: bold;
+    }
+
+    button:hover {
+        background-color: #436447;
+    }
