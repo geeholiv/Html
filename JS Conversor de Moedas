@@ -1,0 +1,56 @@
+document.getElementById('calcForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const valor = parseFloat(document.getElementById('valor').value);
+    const moedaOrigem = document.getElementById('moedaOrigem').value;
+    const moedaDestino = document.getElementById('moedaDestino').value;
+    const erroDiv = document.getElementById('erro');
+    const resultadoDiv = document.getElementById('resultado');
+
+    erroDiv.textContent = '';
+    resultadoDiv.textContent = '';
+
+    if (moedaOrigem === moedaDestino) {
+        erroDiv.textContent = 'Por favor, escolha moedas diferentes para conversão.';
+        return;
+    }
+
+    if (isNaN(valor) || valor <= 0) {
+        erroDiv.textContent = 'Por favor, insira um valor válido maior que zero.';
+        return;
+    }
+
+    const taxas = {
+        BRL: { USD: 0.20, EUR: 0.18 },
+        USD: { BRL: 5.00, EUR: 0.90 },
+        EUR: { BRL: 5.50, USD: 1.10 }
+    
+    };
+
+    let valorConvertido;
+
+    if (taxas[moedaOrigem] && taxas[moedaOrigem][moedaDestino]) {
+        valorConvertido = valor * taxas[moedaOrigem][moedaDestino];
+    } else {
+        erroDiv.textContent = 'Conversão não disponível.';
+        return;
+    }
+
+    resultadoDiv.textContent = `${valor.toFixed(2)} ${moedaOrigem} equivalem a ${valorConvertido.toFixed(2)} ${moedaDestino}`;
+
+    fetch('http://localhost:8080/ConversorMoedas', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/x-www-form-urlencoded'
+        },
+        body: new URLSearchParams({
+            valor: valor,
+            moedaOrigem: moedaOrigem,
+            moedaDestino: moedaDestino
+        })
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log(data);
+    });
+});
