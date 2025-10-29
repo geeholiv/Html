@@ -1,0 +1,86 @@
+*{ margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ } 
+body {
+  font-family: 'arial', cursive, sans-serif;
+  background: linear-gradient(to right, white, #fcecf4);
+  flex-direction: column;           
+  margin: 100;
+  margin-top: 0;
+}
+header {
+    background-color:rgb(187, 98, 143);
+    color: white;
+    width: 100%;
+    height: auto;
+    min-height: 40px;
+}
+header h3 {
+    text-align: center;
+    font-size: 1em;
+    display:inline;
+
+}
+.l2{
+    margin-left: 90%;
+    display: inline;
+}
+.container {
+    width: 90%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    margin-top:200px;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(156, 112, 119, 0.5);
+    border: 2px solid #ecbcd8;
+
+}
+h2{
+    position:center;
+    width: 100%;
+    background-color:linear-gradient(to right, rgb(185, 247, 212), #ffddef);
+    display: center;
+    color: #000000;
+    margin: 0 ;
+    padding: 20px 0;
+    text-align: fixed;
+}
+.op1{
+    background-color: rgb(250, 133, 133);
+    width: 220px;
+    height: 50px;
+}
+.op2{
+    background-color: rgb(156, 219, 156);
+    width: 220px;
+    height: 50px;
+}
+.op3{
+    background-color: rgb(120, 228, 255);
+    width: 220px;
+    height: 50px;
+}
+.op4{
+    background-color: rgb(255, 255, 168);
+    width: 220px;
+    height: 50px;
+}
+.options button {
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    border-radius: 8px;
+    border: none;
+    margin-top: 20px;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+    }
+
+    button:hover {
+    background-color: #58885f;
+    }
