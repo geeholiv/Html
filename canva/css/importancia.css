@@ -1,0 +1,92 @@
+*{
+    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+body{
+    background-color:rgb(61, 118, 146) ;
+    color:rgb(255, 255, 255);
+    padding: 0;           
+    margin: 0;
+} 
+h1{
+    width: 100%;
+    font-size: 300%;
+    background-color:linear-gradient(to right, rgb(185, 247, 212), #ffddef);
+    display: center;
+    color: white;
+    margin: 15px ;
+    padding: 20px ;
+    text-align:fixed;
+    margin-left: -28%;
+    text-align: center;
+}
+.list{
+    padding: 0px ;
+    font-size: 200%;
+    margin-left: 3%;
+}
+.imagem {
+    position: absolute; 
+    top: 150px;            
+    right: 500px;          
+    width: 800px;   
+    height: auto;
+    object-fit: cover; 
+    margin-top: 10px;
+    margin-right: -200px; 
+}
+
+
+button {
+  margin-top: 8px;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 100px;
+  background: #f08ebf;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  position: fixed;        
+  top: 50%;            
+  left: 0;                
+  transform: translateY(-50%); 
+}
+
+.importancia{
+    position: absolute;
+      top:0;     
+      right: 0;          
+    width: 300px;      
+    height: auto;    
+    margin-top: 10px;
+    margin-right: 10px; 
+}   
+.importancia2{
+
+ position: absolute;
+      top:500px;     
+      right: 0;          
+    width: 500px;      
+    height: auto;    
+    margin-top: 10px;
+    margin-right: 10px; 
+}   
+.buttonVoltar{
+    margin-top: 8px;
+    padding: 10px 14px;
+    border: none;
+    border-radius: 100px;
+    background-color: #f08ebf;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%); 
+}

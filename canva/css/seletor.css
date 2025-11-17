@@ -1,0 +1,91 @@
+body {
+        background: rgb(15, 42, 55);
+}
+
+h3{
+    color: rgb(247, 247, 247);
+}
+h4{
+ font-size: 30px;
+  margin-bottom: 30px;
+  color: #180812;
+}
+.main {
+  padding: 5px;
+  text-align: center;
+}
+
+main h2 {
+  font-size: 70px;
+  
+  color: #ffffff;
+  text-align: center; 
+    margin-top: 0; 
+    margin-bottom: 20px;
+}
+
+body {
+    background: rgb(15, 42, 55);
+    position: relative; 
+    height: 100vh;       
+    margin: 0;
+}
+
+.secao {
+    width: 900px;        
+    height: 600px;      
+    background-color: rgb(61, 118, 146);
+    position: absolute;
+    top: 50%;            
+    left: 50%;         
+    transform: translate(-50%, -50%);
+  }
+.imagens {
+  display: flex; 
+  justify-content: flex-start; 
+text-align: center;
+}
+
+
+  button {
+  margin-top: 8px;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 100px;
+  background: #f08ebf;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  position: fixed;        
+  top: 50%;            
+  left: 0;                
+  transform: translateY(-50%); 
+}
+.imagens {
+    display: flex;
+    justify-content: center;   
+    gap: 15px;                
+    margin-top: 20px;
+}
+
+.imagens img {
+    width: 440px;             
+    height: auto;
+    display: block;
+}
+.buttonVoltar{
+    margin-top: 8px;
+    padding: 10px 14px;
+    border: none;
+    border-radius: 100px;
+    background-color: #f08ebf;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%); 
+}

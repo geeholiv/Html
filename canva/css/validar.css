@@ -1,0 +1,70 @@
+body {
+    background: rgb(219, 220, 221);
+}
+.imagem-direita-topo {
+    position: absolute; 
+    top: 150px;            
+    right: 0;          
+    width: 600px;   
+    height: auto;
+    object-fit: cover; 
+    margin-top: 10px;
+    margin-right: 300px; 
+}
+
+
+h3{
+ font-size: 30px;
+  margin-bottom: 30px;
+  color: #180812;
+}
+.main {
+  padding: 5px;
+  text-align: center;
+}
+
+main h2 {
+  font-size: 70px;
+  margin-bottom: 30px;
+  color: #180812;
+}
+button {
+  margin-top: 8px;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 100px;
+  color: white;
+ background-color: #f08ebf;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  position: fixed;        
+  top: 50%;            
+  left: 0;                
+  transform: translateY(-50%); 
+}
+
+.enfeite3{
+    position: absolute;
+      top:0;     
+      right: 0;          
+    width: 500px;      
+    height: auto;    
+    margin-top: 10px;
+    margin-right: 10px; 
+}
+.buttonVoltar{
+    margin-top: 8px;
+    padding: 10px 14px;
+    border: none;
+    border-radius: 100px;
+    background-color: #f08ebf;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%); 
+}

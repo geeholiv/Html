@@ -1,0 +1,51 @@
+body {
+        background: rgb(15, 42, 55);  
+}
+
+h1{
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+.capa{
+    position: absolute;
+      top:0;     
+      right: 0;          
+    width: 700px;      
+    height: auto;    
+    margin-top: 10px;
+    margin-right: 10px; 
+}  
+button {
+  margin-top: 8px;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 100px;
+  background: #f08ebf;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  position: fixed;        
+  top: 50%;            
+  left: 0;                
+  transform: translateY(-50%); 
+}
+.buttonVoltar{
+    margin-top: 8px;
+    padding: 10px 14px;
+    border: none;
+    border-radius: 100px;
+    background-color: #f08ebf;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%); 
+}
