@@ -1,0 +1,206 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(216, 209, 209);
+  margin: 0;
+  padding: 0;
+  color: rgb(0, 0, 0);
+}
+header {
+    background: #ffb6c1;
+    padding: 7px 30px;
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 5px solid #ff69b4;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.frase {
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    text-shadow: 2px 2px 4px rgba(255, 105, 180, 0.8);
+    margin-right: 60%;
+}
+
+img {
+    width: 7%;
+    height: auto;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left: 100px;
+}
+
+header .livro:hover {
+    transform: scale(1.1);
+}
+
+
+nav a {
+    margin: 0 18px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.3s;
+    text-shadow: 1px 1px 3px rgba(255, 105, 180, 0.8);
+}
+
+nav a:hover {
+    color: #7a2f4d;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.search input {
+    padding: 8px 14px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+.sacola img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.sacola img:hover {
+    transform: scale(1.2);
+}
+
+header .compras:hover {
+    transform: scale(1.2);
+}
+
+main {
+    padding: 5px;
+    text-align: center;
+}
+
+main h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #c71585;
+}
+/* título */
+h2{
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* contém tudo */
+.detalhes-produto {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* container imagem + texto */
+.produto-info {
+    display: flex;
+    flex-wrap: nowrap; 
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    max-width: 1100px;
+    margin: 50px auto;
+}
+
+/* imagem */
+.produto-info img {
+    max-width: 380px;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* textos */
+.texto-info {
+    max-width: 600px;
+    text-align: left;
+}
+
+.texto-info h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+/* descrição */
+.texto-info .descricao {
+    line-height: 1.5;
+    max-width: 600px;
+}
+
+/* botão */
+.botao-emprestar {
+    background-color: rgb(204, 161, 173);
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.1em;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.voltar {
+    display: block;
+    margin-top: 20px;
+    color: #444;
+    text-decoration: underline;
+}
+
+footer {
+    width: 100%;
+    margin: 0;
+    padding: 30px 20px;
+    background: #ffb6c1;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    border-top: 5px solid #ff69b4;
+}
+
+footer p {
+    font-size: 14px;
+    margin-bottom: 15px;
+    letter-spacing: 0.5px;
+}
+
+footer .social {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    font-size: 18px;
+    flex-wrap: wrap;
+}
+
+footer .social a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+footer .social a:hover {
+    color: #7a2f4d;
+}
+
+footer {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 35px;
+
+    
+}
+

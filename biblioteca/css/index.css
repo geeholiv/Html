@@ -1,0 +1,352 @@
+/*corpo*/
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #ffe6f2;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #ffb6c1;
+    padding: 7px 30px;
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 5px solid #ff69b4;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    margin-right: -34.5px;
+}
+/*frase do home(slogan)*/
+.frase {
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    text-shadow: 2px 2px 4px rgba(255, 105, 180, 0.8);
+    margin-right: 60%;
+}
+/*logo*/
+img {
+    width: 7%;
+    height: auto;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left: 50px;
+}
+
+/*listas link header*/
+nav a {
+    margin: 0 18px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.3s;
+    text-shadow: 1px 1px 3px rgba(255, 105, 180, 0.8);
+}
+
+nav a:hover {
+    color: #7a2f4d;
+}
+/*barra de pesquisa*/
+.search {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+}
+
+/*inserir termos de pesquisa*/
+.search input {
+    padding: 9px 20px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+/*lupa*/
+.Lupa img {
+    width: 35px;
+    height: 35px;
+    display: block;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left: 10px; 
+}
+
+
+.Lupa img:hover {
+    transform: scale(1.2);
+}
+
+main {
+    padding: 5px;
+    text-align: center;
+}
+
+main h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #c71585;
+}
+
+
+footer {
+    width: 100%;
+    margin: 0;
+    padding: 30px 20px;
+    background: #ffb6c1;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    border-top: 5px solid #ff69b4;
+}
+
+footer p {
+    font-size: 14px;
+    margin-bottom: 15px;
+    letter-spacing: 0.5px;
+}
+
+footer .social {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    font-size: 18px;
+    flex-wrap: wrap;
+}
+
+footer .social a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+footer .social a:hover {
+    color: #7a2f4d;
+}
+
+footer {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    margin-bottom: -5px;
+    margin-left: -5px;
+}
+
+
+
+.secao-principal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 150px;
+    background-color: #f8dde7;
+    margin-right: -34.5px;
+}
+
+.secao-conteudo {
+    max-width: 520px;
+}
+
+.secao-pequena {
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: #c57a8a;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.secao-titulo {
+    font-size: 48px;
+    font-weight: 700;
+    color: #5a3a44;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.secao-texto {
+    font-size: 18px;
+    color: #6b4f57;
+    margin-bottom: 25px;
+}
+
+.circulo  img {
+    
+    width: 450px;
+    height: auto;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    top: 0;
+    position: relative; 
+    margin-right: 100px;
+
+}
+
+
+.seccao-principal {
+    display: flex;
+    align-items: flex-start;   
+    justify-content: space-between;
+    padding: 40px 60px;      
+}
+
+
+
+.top-section {
+    display: flex;
+    align-items: flex-start;   
+    justify-content: space-between;
+    padding: 40px 60px;       
+}
+
+.texto {
+    max-width: 600px;
+}
+
+.subtitulo {
+    letter-spacing: 3px;
+    color: #885151;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.titulo {
+    font-size: 48px;
+    color: #5c3c3c;
+    margin: 0;
+    font-weight: 700;
+}
+
+.descricao {
+    font-size: 18px;
+    margin-top: 20px;
+    color: #4b3a3a;
+    line-height: 1.6;
+}
+
+.bloco-destaque {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    padding: 50px 80px;
+    background: #fff7fb;
+    margin-right: -34.5px;
+}
+
+.destaque-imagem img {
+    width: 420px;
+    height: auto;
+    border-radius: 15px;
+}
+
+.destaque-conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    max-width: 500px;
+}
+
+.destaque-subtitulo {
+    color: #c07a8a;
+    letter-spacing: 3px;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.destaque-titulo {
+    font-size: 32px;
+    color: #4b3a3a;
+    margin-bottom: 30px;
+}
+
+.cards-destaque {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px;
+}
+
+.capa.livro {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    padding: 15px;
+    gap: 0px;
+    height: 120px;
+    width: 90%;
+}
+
+.capa.livro img {
+    width: 110px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 6px;
+      margin: 0; 
+}
+.capa.livro div {
+    margin-left: 15px; 
+}
+
+.capa.livro h3 {
+    font-size: 17px;
+    color: #4b3a3a;
+    margin: 0;
+    
+}
+
+.capa.livro p {
+    font-size: 13px;
+    color: #777;
+    margin: 3px 0 0;
+}
+
+
+
+
+.generos-container {
+    display: flex;
+    gap: 20px; 
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 60px; 
+}
+
+.genero-item {
+    text-align: center;
+}
+
+.generos-container img {
+    width: 180px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+    margin-bottom: 8px; 
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.generos-container img:hover {
+    transform: scale(1.2);
+}
+
+
+.genero-item p {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+a {
+  color: black;          
+  text-decoration: none;
+}
