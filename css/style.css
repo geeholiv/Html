@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: #c9fdcfa9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculadora {
+    background-color: rgba(230, 126, 213, 0.836);
+    padding: 25px;
+    border-radius: 15px;
+}
+
+/* GRID DOS BOTÕES */
+.form {
+    display: grid;
+    grid-template-columns: repeat(4, 70px);
+    justify-content: center;
+    gap: 12px;
+}
+
+/* DISPLAY */
+.display {
+    grid-column: span 4;
+    background: #6d6d6d;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.display input {
+    width: 100%;
+    border: none;
+    background: transparent;
+    font-size: 40px;
+    text-align: right;
+    color: white;
+}
+
+/* BOTÕES */
+.btn {
+    width: 70px;
+    height: 70px;
+    border-radius: 12px;
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    transition: 0.2s;
+}
+
+/* NÚMEROS */
+.btn.num {
+    background-color: #cc4c9b;
+}
+
+/* OPERADORES */
+.btn.op {
+    background-color: #f3c279;
+}
+
+/* LIMPAR (C) */
+.btn.clear {
+    background-color: #f57f7d;
+}
+
+/* IGUAL */
+.btn.equal {
+    background-color: #4caf50;
+    grid-column: span 4;
+    height: 75px;
+    font-size: 28px;
+    width: 50%;
+}
+
+.btn:hover {
+    opacity: 0.60;
+}

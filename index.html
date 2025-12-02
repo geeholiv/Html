@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="calculadora">
+            <div class="form">
+
+                <!-- DISPLAY -->
+                <div class="display">
+                    <input type="text" id="displayInput">
+                </div>
+
+                <!-- LINHA 1 -->
+                <input class="btn num" type="button" value="7" onclick="adicionarAoDisplay('7')">
+                <input class="btn num" type="button" value="8" onclick="adicionarAoDisplay('8')">
+                <input class="btn num" type="button" value="9" onclick="adicionarAoDisplay('9')">
+                <input class="btn op" type="button" value="/" onclick="adicionarAoDisplay('/')">
+
+                <!-- LINHA 2 -->
+                <input class="btn num" type="button" value="4" onclick="adicionarAoDisplay('4')">
+                <input class="btn num" type="button" value="5" onclick="adicionarAoDisplay('5')">
+                <input class="btn num" type="button" value="6" onclick="adicionarAoDisplay('6')">
+                <input class="btn op" type="button" value="*" onclick="adicionarAoDisplay('*')">
+
+                <!-- LINHA 3 -->
+                <input class="btn num" type="button" value="1" onclick="adicionarAoDisplay('1')">
+                <input class="btn num" type="button" value="2" onclick="adicionarAoDisplay('2')">
+                <input class="btn num" type="button" value="3" onclick="adicionarAoDisplay('3')">
+                <input class="btn op" type="button" value="-" onclick="adicionarAoDisplay('-')">
+
+                <!-- LINHA 4 -->
+                <input class="btn num" type="button" value="0" onclick="adicionarAoDisplay('0')">
+                <input class="btn num" type="button" value="." onclick="adicionarAoDisplay('.')">
+                <input class="btn clear" type="button" value="C" onclick="limparDisplay()">
+                <input class="btn op" type="button" value="+" onclick="adicionarAoDisplay('+')">
+
+                <!-- IGUAL -->
+                <input id="equal" class="btn equal" type="button" value="=" onclick="calcular()">
+
+            </div>
+        </div>
+    </div>
+
+    <script src="JS/app.js"></script>
+</body>
+
+</html>
