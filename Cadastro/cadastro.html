@@ -90,7 +90,12 @@
 
     <form id="usuarioForm">
         <input type="hidden" id="id">
-
+     
+        <div class="form-group">
+<label>Foto de Perfil</label>
+<input type="file" id="fotoInput" accept="image/*"> <img id="preview" src="imgs/icon moranguinho.jpg"
+style="display:none; width: 100px; margin-top: 10px; border-radius: 50%;">
+</div>
         <div class="form-group">
             <label>Nome</label>
             <input type="text" id="nome" required>
@@ -242,6 +247,24 @@ form.addEventListener('submit', function (e) {
             '<span class="erro">Erro ao salvar usuário.</span>';
     });
 });
+
+const fotoInput = document.getElementById('fotoInput');
+const preview = document.getElementById('preview');
+let fotoBase64 = ""; // Variável global para guardar a string da foto
+
+fotoInput.addEventListener('change', function() {
+const arquivo = this.files[0];
+if (arquivo) {
+const reader = new FileReader();
+reader.onload = function(e) {
+fotoBase64 = e.target.result; // Aqui está o texto da imagem
+preview.src = fotoBase64;
+preview.style.display = 'block';
+};
+reader.readAsDataURL(arquivo);
+}
+});
+
 </script>
 
 </body>
